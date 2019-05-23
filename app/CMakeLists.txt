@@ -7,3 +7,10 @@ add_library( counter-native
              src/main/cpp/com_example_ndkdemo_CounterNative.cpp )
 
 
+add_library( counter-native-2
+
+        SHARED
+
+        src/main/cpp/com_example_ndkdemo_CounterNative2.cpp )
+
+

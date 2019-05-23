@@ -10,10 +10,12 @@ class MainActivity : Activity(), View.OnClickListener {
         when(v?.id){
             R.id.button_one->CounterNative.nativeExecute(20)
             R.id.button_two->nativeCounter.nativeExe(100)
+            R.id.counter2_button->nativeCounter2.nativeExe()
         }
     }
 
     private lateinit var nativeCounter: CounterNative
+    private lateinit var nativeCounter2: CounterNative2
 
 
     object StaticParams{
@@ -26,9 +28,11 @@ class MainActivity : Activity(), View.OnClickListener {
         val pageTitleView: TextView = findViewById(R.id.page_title)
         findViewById<TextView>(R.id.button_one).setOnClickListener(this)
         findViewById<TextView>(R.id.button_two).setOnClickListener(this)
+        findViewById<TextView>(R.id.counter2_button).setOnClickListener(this)
         StaticParams.titleChangeListener= object: MyTitleChangeListener(pageTitleView){}
 
         nativeCounter = CounterNative()
+        nativeCounter2=CounterNative2()
 
     }
 
