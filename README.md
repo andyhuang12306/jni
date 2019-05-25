@@ -24,6 +24,12 @@ key issue:
 2. remember to load the libary in  static {} and pay attention to the lib name
 
 
-what will do next about this demo:
+functions included:
 
-to realize a little bit complicate case to know more about c++
+1. a basic test for c++ and java function call;
+
+2. a test for c++ and java instance passing to binding each other's instance
+
+what to do next:
+
+1. do more C++ grammar practice
